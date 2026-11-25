@@ -1,0 +1,19 @@
+# LingRelay
+
+> OpenAI-compatible LLM API relay service at https://lingrelay.xyz/v1
+
+## Authentication
+Bearer token (sk-xxx) generated at https://lingrelay.xyz → 令牌 page.
+
+## Endpoints
+- GET /v1/models — list models
+- POST /v1/chat/completions — chat (supports stream=true)
+
+## Available Models
+deepseek-chat, deepseek-coder, deepseek-v4.1-flash, glm-5.3-flash
+
+## Rate Limits
+Global ~1000 RPM. Per-token limits configurable. HTTP 429 = rate limited.
+
+## Contact
+GitHub Issues.
